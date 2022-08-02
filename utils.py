@@ -1,8 +1,13 @@
 import json
+import pathlib
+from pathlib import Path
+
+dir_path = pathlib.Path.home()
+path = Path(dir_path, "CourseWork2_new", "data.json")
 
 
 def get_posts_all():
-    file = open("data.json", encoding="utf-8")
+    file = open(path, encoding="utf-8")
     posts_list = json.load(file)
     file.close()
     return posts_list
@@ -18,7 +23,7 @@ def posts_by_user(user_name):
 
 
 def get_comments_by_post_id(post_id):
-    with open("comments.json", encoding="utf-8") as file:
+    with open("C:/Users/alexg/PycharmProjects/CourseWork2_new/comments.json", encoding="utf-8") as file:
         comments_list = json.load(file)
         comments_json_list = []
         for comment in comments_list:
