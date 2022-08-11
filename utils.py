@@ -47,4 +47,3 @@ def get_post_by_pk(pk):
         if post["pk"] == pk:
             return post
     return {'not_found': "Ничего нет:("}
-
