@@ -4,5 +4,6 @@ services:
   api:
     build:
       context: .
+    image: typeanyname/skyprogramm_abokov
     ports:
       - 80:80
