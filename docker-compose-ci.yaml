@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  api:
+    image: typeanyname/skyprogramm_abokov:$GITHUB_REF_NAME-$GITHUBRUN_ID
+    ports:
+      - 80:80
