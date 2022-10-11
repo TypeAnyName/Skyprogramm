@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 app.config['JSON_AS_ASCII'] = False
 
+
 @app.route('/')
 def main_page():
     posts_list = utils.get_posts_all()
